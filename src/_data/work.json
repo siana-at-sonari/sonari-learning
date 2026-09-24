@@ -6,12 +6,14 @@
   },
   "items": [
     {
-      "anchor": "fast-focus",
-      "visual_text": "23 min",
       "visual_color": "deep",
       "meta": "The MACH Alliance, 2023–2024",
-      "title": "Fast Focus: learning for leaders with 23 minutes a week",
+      "visual_text": "23 min",
       "text": "",
+      "link_text": "Read the case study",
+      "anchor": "fast-focus",
+      "title": "Fast Focus: learning for leaders with 23 minutes a week",
+      "link": "/fast-focus/",
       "stats": [
         {
           "value": "3×",
@@ -25,36 +27,34 @@
           "value": "17 min",
           "label": "average module time"
         }
-      ],
-      "link": "/fast-focus/",
-      "link_text": "Read the case study"
+      ]
     },
     {
-      "anchor": "meta",
-      "visual_text": "70k",
       "visual_color": "line",
       "meta": "Meta, 2021–2022",
-      "title": "Spark AR Advanced Certification",
+      "visual_text": "70k",
       "text": "Coordinated SMEs and vendors across multiple countries to deliver a technical certification program under a compressed deadline.",
+      "link_text": "Read the case study",
+      "anchor": "meta",
+      "title": "Spark AR Advanced Certification",
+      "link": "https://sianaaltiise.wixsite.com/portfolio/meta-spark-ar",
       "stats": [
         {
           "value": "70,000",
           "label": "sign-ups"
         }
-      ],
-      "link": "https://sianaaltiise.wixsite.com/portfolio/facebook-onboarding-tool-copy-1",
-      "link_text": "Read the case study"
+      ]
     },
     {
-      "anchor": "unomundi",
-      "visual_text": "Una",
       "visual_color": "sand",
       "meta": "UnoMundi, 2024–present",
-      "title": "Una: an AI-enabled learning system",
+      "visual_text": "Una",
       "text": "A schema-driven AI learning system for a global children's platform: prompt pipelines, content governance, and mastery tracking without traditional tests.",
-      "stats": [],
-      "link": "https://sianaaltiise.wixsite.com/portfolio/copy-of-spark-ar",
-      "link_text": "Read the case study"
+      "link_text": "Read the case study",
+      "anchor": "unomundi",
+      "title": "Una: an AI-enabled learning system",
+      "link": "https://sianaaltiise.wixsite.com/portfolio/unomundi",
+      "stats": []
     }
   ],
   "portfolio_line": "Looking for eLearning samples, animations, and graphics?",
