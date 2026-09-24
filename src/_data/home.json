@@ -1,12 +1,4 @@
 {
-  "hero": {
-    "headline": "Learning designed for the attention your people actually have.",
-    "intro": "More content isn't more learning. Sonari Learning designs training that respects limited time and focus, cutting what doesn't earn its place so what remains actually changes how people work.",
-    "primary_button": "Book a 20-minute intro call",
-    "secondary_button": "See the work",
-    "caption_left": "More information",
-    "caption_right": "A clearer route"
-  },
   "clients": {
     "label": "Learning and research programs for",
     "names": [
@@ -15,14 +7,6 @@
       "Flatiron",
       "The MACH Alliance",
       "UnoMundi"
-    ]
-  },
-  "problem": {
-    "label": "The problem",
-    "headline": "Your training isn't failing because it's too thin.",
-    "paragraphs": [
-      "It's failing because it asks for attention your people don't have. Courses get longer, completion rates drop, and the learners you most need to reach, like busy leaders, frontline teams, and new hires on overload, skim, skip, or click through without absorbing anything.",
-      "Adding more modules, more slides, or more assessments rarely helps. It makes the problem worse."
     ]
   },
   "approach": {
@@ -55,6 +39,43 @@
     "card_link_text": "Read more",
     "also_line": "Also available: AI-enabled learning systems and certification program design."
   },
+  "about": {
+    "label": "About",
+    "headline": "Hi, I'm Siana Altiise.",
+    "photo": "/images/chatgpt-image-mar-16-2026-03_29_52-pm.png",
+    "paragraphs": [
+      "I'm a learning designer and researcher trained in experimental psychology, with 6+ years designing learning and research programs across AI, enterprise technology, and immersive training.",
+      "I founded Sonari Learning because I kept seeing the same pattern: organizations investing in more content when their people needed less, delivered more clearly."
+    ],
+    "link_text": "More about me"
+  },
+  "process": {
+    "label": "Process",
+    "headline": "How an engagement works",
+    "steps": [
+      {
+        "title": "Listen",
+        "text": "Your goals, your learners, and the reality of their time and attention."
+      },
+      {
+        "title": "Cut",
+        "text": "Separate what's essential from what's just volume."
+      },
+      {
+        "title": "Design",
+        "text": "Build the shortest clear route to the behavior you need."
+      },
+      {
+        "title": "Measure",
+        "text": "Track real outcomes and refine."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Let's find the shortest route.",
+    "text": "A 20-minute call, which is about all the time most learners get, too. We'll talk through what you're trying to change and whether I'm the right fit.",
+    "button": "Book a call"
+  },
   "results": {
     "label": "Proof",
     "headline": "Results",
@@ -83,46 +104,25 @@
       }
     ]
   },
+  "hero": {
+    "headline": "Learning designed for the attention your people actually have.",
+    "intro": "More content isn't more learning. Sonari Learning designs training that respects limited time and focus, cutting what doesn't earn its place so what remains actually changes how people work.",
+    "primary_button": "Book a 20-minute intro call",
+    "secondary_button": "See the work",
+    "caption_left": "More information",
+    "caption_right": "A clearer route"
+  },
   "testimonial": {
     "show": false,
     "quote": "Client quote about the results or what it was like to work together.",
     "name": "Name, Title, Company"
   },
-  "process": {
-    "label": "Process",
-    "headline": "How an engagement works",
-    "steps": [
-      {
-        "title": "Listen",
-        "text": "Your goals, your learners, and the reality of their time and attention."
-      },
-      {
-        "title": "Cut",
-        "text": "Separate what's essential from what's just volume."
-      },
-      {
-        "title": "Design",
-        "text": "Build the shortest clear route to the behavior you need."
-      },
-      {
-        "title": "Measure",
-        "text": "Track real outcomes and refine."
-      }
-    ]
-  },
-  "about": {
-    "label": "About",
-    "headline": "Hi, I'm Siana Altiise.",
-    "photo": "/images/siana.jpg",
+  "problem": {
+    "label": "The problem",
+    "headline": "Your training isn't failing because it's too thin.",
     "paragraphs": [
-      "I'm a learning designer and researcher trained in experimental psychology, with 6+ years designing learning and research programs across AI, enterprise technology, and immersive training.",
-      "I founded Sonari Learning because I kept seeing the same pattern: organizations investing in more content when their people needed less, delivered more clearly."
-    ],
-    "link_text": "More about me"
-  },
-  "closing": {
-    "headline": "Let's find the shortest route.",
-    "text": "A 20-minute call, which is about all the time most learners get, too. We'll talk through what you're trying to change and whether I'm the right fit.",
-    "button": "Book a call"
+      "It's failing because it asks for attention your people don't have. Courses get longer, completion rates drop, and the learners you most need to reach, like busy leaders, frontline teams, and new hires on overload, skim, skip, or click through without absorbing anything.",
+      "Adding more modules, more slides, or more assessments rarely helps. It makes the problem worse."
+    ]
   }
 }
