@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "label": "Services",
+    "headline": "Less to sit through. More that sticks.",
+    "intro": "Three ways to work together, each scoped so you know what you're getting, how long it takes, and what it costs before we start."
+  },
+  "items": [
+    {
+      "id": "audit",
+      "name": "Training Audit",
+      "summary": "A focused review of an existing course or program: what to keep, cut, and restructure, with a prioritized redesign plan.",
+      "description": "A focused review of an existing course or program. You get a clear report on what to keep, cut, and restructure, with a prioritized redesign plan your team can act on.",
+      "timeline": "2–3 weeks",
+      "investment": "From [$X]",
+      "deliverables": [
+        "Learner time and attention analysis",
+        "Content review: keep, cut, restructure",
+        "Completion and drop-off diagnosis",
+        "Prioritized redesign roadmap",
+        "60-minute readout with your team"
+      ],
+      "best_for": "Teams with a course that people start but don't finish, or finish without changing anything."
+    },
+    {
+      "id": "redesign",
+      "name": "Program Redesign",
+      "summary": "Heavy courses rebuilt into efficient, focused learning: microlearning, audio formats, and reflection-based modules, with measurement built in.",
+      "description": "We rebuild heavy courses into efficient, focused learning experiences, such as microlearning, audio formats, and reflection-based modules, with measurement built in from day one.",
+      "timeline": "6–10 weeks",
+      "investment": "From [$X]",
+      "deliverables": [
+        "Everything in the Training Audit",
+        "Learning architecture and module map",
+        "Scripts, storyboards, and assets",
+        "Build in your LMS or platform",
+        "Measurement plan and 30-day review"
+      ],
+      "best_for": "Organizations ready to replace a long, low-impact program with something people will actually use."
+    },
+    {
+      "id": "leaders",
+      "name": "Leader & Executive Learning",
+      "summary": "Learning products for time-poor leaders who won't sit through traditional courses. Short, credible, and built for real schedules.",
+      "description": "Learning products for time-poor leaders who won't sit through traditional courses. Short, credible, and built to fit into real schedules, modeled on the approach behind Fast Focus.",
+      "timeline": "Custom",
+      "investment": "Scoped per project",
+      "deliverables": [
+        "Units scoped to under 20 minutes",
+        "Audio and text formats for on-the-go use",
+        "Reflection prompts instead of quizzes",
+        "Live reinforcement touchpoints",
+        "Lightweight engagement and impact tracking"
+      ],
+      "best_for": "L&D and transformation teams who need senior leaders engaged, not just enrolled."
+    }
+  ],
+  "extras_label": "Also available",
+  "extras": [
+    {
+      "title": "AI-enabled learning systems",
+      "text": "Prompt pipelines, content governance, and mastery tracking for AI-powered learning products."
+    },
+    {
+      "title": "Certification program design",
+      "text": "Technical certifications coordinated across SMEs, vendors, and regions, from structure to launch."
+    }
+  ],
+  "faq": {
+    "label": "Questions",
+    "headline": "Before you ask",
+    "items": [
+      {
+        "question": "Do you work with our existing LMS?",
+        "answer": "Yes. I design for the platform you already have. [Add platforms you've worked in, such as 360Learning.]"
+      },
+      {
+        "question": "What if we don't want to cut content?",
+        "answer": "Nothing essential gets lost. Deeper material can live one click away, the way Fast Focus linked leaders back to full courses."
+      },
+      {
+        "question": "Can we start small?",
+        "answer": "Yes. Most clients begin with a Training Audit, then decide whether to redesign."
+      }
+    ]
+  },
+  "band": {
+    "headline": "Not sure which fits? Start with a 20-minute call.",
+    "button": "Book a call"
+  }
+}

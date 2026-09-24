@@ -1,0 +1,144 @@
+---
+layout: base.njk
+---
+{% set h = home %}
+<section class="hero">
+  <div class="wrap stack stack--lg">
+    <h1>{{ h.hero.headline }}</h1>
+    <p class="lede">{{ h.hero.intro }}</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="/contact/">{{ h.hero.primary_button }}</a>
+      <a class="btn btn--ghost" href="/work/">{{ h.hero.secondary_button }}</a>
+    </div>
+    <div class="signal" aria-hidden="true">
+      <svg viewBox="0 0 1248 150" fill="none" preserveAspectRatio="xMidYMid meet">
+        <path d="M0 75 L16 30 L28 122 L40 20 L52 132 L66 42 L78 116 L92 28 L106 124 L120 48 L136 108 L152 40 L168 112 L186 54 L204 100 L222 56 L242 96 L262 62 L284 90 L308 66 L334 86 L362 70 L394 80 L430 75 C 510 75 530 30 600 30 S 690 120 760 120 S 850 30 920 30 S 1010 120 1080 120 S 1170 75 1248 75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="signal-captions"><span>{{ h.hero.caption_left }}</span><span>{{ h.hero.caption_right }}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="clients" aria-label="Organizations">
+  <div class="wrap">
+    <p class="meta">{{ h.clients.label }}</p>
+    <ul>{% for n in h.clients.names %}<li>{{ n }}</li>{% endfor %}</ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="stack">
+      <p class="label">{{ h.problem.label }}</p>
+      <h2>{{ h.problem.headline }}</h2>
+    </div>
+    <div class="stack body-lg">
+      {% for p in h.problem.paragraphs %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--deep">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="stack" style="max-width: 44rem">
+        <p class="label">{{ h.approach.label }}</p>
+        <h2>{{ h.approach.headline }}</h2>
+      </div>
+      <p class="muted" style="max-width: 30rem; font-size: 1.15rem">{{ h.approach.intro }}</p>
+    </div>
+    <div class="grid-4">
+      {% for pr in h.approach.principles %}
+      <div class="stack ruled"><h3>{{ pr.title }}</h3><p class="muted">{{ pr.text }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="stack">
+        <p class="label">{{ h.services_intro.label }}</p>
+        <h2>{{ h.services_intro.headline }}</h2>
+      </div>
+      <a class="text-link" href="/services/">{{ h.services_intro.link_text }}</a>
+    </div>
+    <div class="grid-3">
+      {% for s in services.items %}
+      <div class="card">
+        <p class="meta">{{ s.timeline }}<br>{{ s.investment }}</p>
+        <h3>{{ s.name }}</h3>
+        <p class="muted grow">{{ s.summary }}</p>
+        <a class="accent-link" href="/services/#{{ s.id }}">{{ h.services_intro.card_link_text }}<span class="hidden"> about {{ s.name }}</span></a>
+      </div>
+      {% endfor %}
+    </div>
+    {% if h.services_intro.also_line %}<p class="small" style="margin-top: 2rem">{{ h.services_intro.also_line }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="stack">
+        <p class="label">{{ h.results.label }}</p>
+        <h2>{{ h.results.headline }}</h2>
+      </div>
+      <a class="text-link" href="/work/">{{ h.results.link_text }}</a>
+    </div>
+    <div class="grid-3">
+      {% for r in h.results.items %}
+      <a class="stat-block" href="{{ r.link }}">
+        <span class="stat-num">{{ r.number }}</span>
+        <span class="stat-title">{{ r.title }}</span>
+        <span class="meta">{{ r.client }}</span>
+        <span class="muted">{{ r.text }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if h.testimonial.show %}
+<section class="section section--sand">
+  <div class="wrap quote">
+    <p>“{{ h.testimonial.quote }}”</p>
+    <p>{{ h.testimonial.name }}</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section--rule">
+  <div class="wrap">
+    <div class="stack" style="margin-bottom: 3.5rem">
+      <p class="label">{{ h.process.label }}</p>
+      <h2>{{ h.process.headline }}</h2>
+    </div>
+    <ol class="grid-4" style="list-style: none; padding: 0; margin: 0">
+      {% for st in h.process.steps %}
+      <li class="stack ruled ruled--strong" style="margin: 0"><span class="step-num">{{ loop.index }}</span><h3>{{ st.title }}</h3><p class="muted">{{ st.text }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section--tight-top">
+  <div class="wrap split split--center">
+    <img class="portrait" src="{{ h.about.photo }}" alt="Portrait of Siana Altiise" width="900" height="1125" loading="lazy">
+    <div class="stack stack--lg">
+      <p class="label">{{ h.about.label }}</p>
+      <h2>{{ h.about.headline }}</h2>
+      {% for p in h.about.paragraphs %}<p class="body-lg">{{ p }}</p>{% endfor %}
+      <a class="accent-link" href="/about/">{{ h.about.link_text }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule closing">
+  <div class="wrap stack stack--lg">
+    <h2 style="font-size: clamp(2.75rem, 7vw, 6rem); line-height: 1">{{ h.closing.headline }}</h2>
+    <p class="lede">{{ h.closing.text }}</p>
+    <a class="btn btn--primary" href="/contact/">{{ h.closing.button }}</a>
+  </div>
+</section>

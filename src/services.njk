@@ -1,0 +1,75 @@
+---
+layout: base.njk
+title: Services
+description: Training audits, program redesign, and leader learning. Scoped engagements with clear timelines and pricing.
+current: services
+permalink: /services/
+---
+{% set sv = services %}
+<section class="hero">
+  <div class="wrap split split--end">
+    <div class="stack stack--lg">
+      <p class="label">{{ sv.hero.label }}</p>
+      <h1>{{ sv.hero.headline }}</h1>
+    </div>
+    <p class="lede">{{ sv.hero.intro }}</p>
+  </div>
+</section>
+
+<section class="section section--tight-top">
+  <div class="wrap">
+    {% for s in sv.items %}
+    <article class="service" id="{{ s.id }}">
+      <div class="stack">
+        <h2>{{ s.name }}</h2>
+        <p class="body-lg">{{ s.description }}</p>
+        <dl class="facts">
+          <div><dt>Timeline</dt><dd>{{ s.timeline }}</dd></div>
+          <div><dt>Investment</dt><dd>{{ s.investment }}</dd></div>
+        </dl>
+      </div>
+      <div class="stack">
+        <p class="col-head">What you get</p>
+        <ul>{% for d in s.deliverables %}<li>{{ d }}</li>{% endfor %}</ul>
+      </div>
+      <div class="stack">
+        <p class="col-head">Best for</p>
+        <p class="muted">{{ s.best_for }}</p>
+      </div>
+    </article>
+    {% endfor %}
+
+    {% if sv.extras.length %}
+    <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); margin-top: 2rem">
+      {% for e in sv.extras %}
+      <div class="card card--outline">
+        <p class="meta">{{ sv.extras_label }}</p>
+        <h3>{{ e.title }}</h3>
+        <p class="muted">{{ e.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="wrap split split--offset">
+    <div class="stack">
+      <p class="label">{{ sv.faq.label }}</p>
+      <h2>{{ sv.faq.headline }}</h2>
+    </div>
+    <div class="faq">
+      {% for q in sv.faq.items %}
+      <div><h3>{{ q.question }}</h3><p class="muted">{{ q.answer }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="band">
+    <h2>{{ sv.band.headline }}</h2>
+    <a class="btn btn--light" href="/contact/">{{ sv.band.button }}</a>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Work
+description: Case studies in attention-first learning design, including Fast Focus for the MACH Alliance and the Spark AR certification for Meta.
+current: work
+permalink: /work/
+---
+<section class="hero">
+  <div class="wrap split split--end">
+    <div class="stack stack--lg">
+      <p class="label">{{ work.hero.label }}</p>
+      <h1>{{ work.hero.headline }}</h1>
+    </div>
+    <p class="lede">{{ work.hero.intro }}</p>
+  </div>
+</section>
+
+<section class="section section--tight-top">
+  <div class="wrap">
+    {% for it in work.items %}
+    <a class="work-item" id="{{ it.anchor }}" href="{{ it.link }}">
+      <div class="work-visual work-visual--{{ it.visual_color or 'deep' }}" aria-hidden="true">{{ it.visual_text }}</div>
+      <div class="stack">
+        <p class="meta">{{ it.meta }}</p>
+        <h2>{{ it.title }}</h2>
+        {% if it.text %}<p class="muted" style="max-width: 38rem">{{ it.text }}</p>{% endif %}
+        {% if it.stats.length %}
+        <div class="inline-stats">
+          {% for st in it.stats %}<div><strong>{{ st.value }}</strong><span>{{ st.label }}</span></div>{% endfor %}
+        </div>
+        {% endif %}
+        <span class="accent-link">{{ it.link_text }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--tight-top">
+  <div class="wrap head-row" style="margin: 0 auto">
+    <p class="muted">{{ work.portfolio_line }}</p>
+    <a class="text-link" href="{{ site.portfolio_url }}">{{ work.portfolio_link_text }}</a>
+  </div>
+</section>

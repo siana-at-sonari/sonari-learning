@@ -1,0 +1,93 @@
+---
+layout: base.njk
+title: Fast Focus case study
+current: work
+permalink: /fast-focus/
+eleventyComputed:
+  description: "{{ fastfocus.seo_description }}"
+---
+{% set f = fastfocus %}
+<section class="hero">
+  <div class="wrap stack stack--lg">
+    <a class="small" href="/work/">{{ f.back_link_text }}</a>
+    <p class="label">{{ f.label }}</p>
+    <h1 style="max-width: 20ch">{{ f.headline }}</h1>
+    <div class="facts-line">
+      {% for fa in f.facts %}<span><b>{{ fa.label }}</b>{{ fa.value }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="stat-bar">
+    {% for st in f.stats %}<div><span class="stat-num">{{ st.value }}</span><span>{{ st.label }}</span></div>{% endfor %}
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap split split--offset">
+    <div class="stack">
+      <p class="label">{{ f.challenge.label }}</p>
+      <h2>{{ f.challenge.headline }}</h2>
+    </div>
+    <div class="stack body-lg">
+      {% for p in f.challenge.paragraphs %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight-top">
+  <div class="wrap stack stack--lg">
+    <p class="label">{{ f.change.label }}</p>
+    <div class="compare">
+      <div class="card card--outline">
+        <h3>{{ f.change.before_title }}</h3>
+        <ul>{% for b in f.change.before %}<li>{{ b }}</li>{% endfor %}</ul>
+      </div>
+      <div class="card card--after">
+        <h3>{{ f.change.after_title }}</h3>
+        <ul>{% for a in f.change.after %}<li>{{ a }}</li>{% endfor %}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="stack" style="margin-bottom: 3rem; max-width: 44rem">
+      <p class="label">{{ f.science.label }}</p>
+      <h2>{{ f.science.headline }}</h2>
+    </div>
+    <div class="grid-3">
+      {% for sc in f.science.items %}<div class="stack"><h3>{{ sc.title }}</h3><p class="muted">{{ sc.text }}</p></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--offset">
+    <div class="stack">
+      <p class="label">{{ f.measuring.label }}</p>
+      <h2>{{ f.measuring.headline }}</h2>
+    </div>
+    <div class="stack body-lg">
+      {% for p in f.measuring.paragraphs %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if f.testimonial.show %}
+<section class="section section--rule">
+  <div class="wrap quote">
+    <p>“{{ f.testimonial.quote }}”</p>
+    <p>{{ f.testimonial.name }}</p>
+  </div>
+</section>
+{% endif %}
+
+<div class="wrap">
+  <div class="band">
+    <h2>{{ f.band.headline }}</h2>
+    <a class="btn btn--light" href="/contact/">{{ f.band.button }}</a>
+  </div>
+</div>

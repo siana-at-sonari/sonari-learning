@@ -1,0 +1,368 @@
+# Editing dashboard settings.
+backend:
+  name: github
+  repo: siana-at-sonari/sonari-learning
+  branch: main
+  commit_messages:
+    update: "Update {{slug}} content"
+
+media_folder: src/images
+public_folder: /images
+
+collections:
+  - name: pages
+    label: Pages
+    editor: { preview: false }
+    files:
+
+      # ------------------------------------------------------------ HOME
+      - name: home
+        label: Home page
+        file: src/_data/home.json
+        fields:
+          - label: Top of page
+            name: hero
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: text }
+              - { label: Intro paragraph, name: intro, widget: text }
+              - { label: Main button text, name: primary_button, widget: string }
+              - { label: Second button text, name: secondary_button, widget: string }
+              - { label: Caption under wave (left), name: caption_left, widget: string }
+              - { label: Caption under wave (right), name: caption_right, widget: string }
+          - label: Client names strip
+            name: clients
+            widget: object
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Names, name: names, widget: list, field: { label: Name, name: name, widget: string } }
+          - label: The problem
+            name: problem
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: text }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: The approach (dark section)
+            name: approach
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: text }
+              - { label: Intro, name: intro, widget: text }
+              - label: Principles
+                name: principles
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: Services section
+            name: services_intro
+            hint: "The service cards themselves come from the Services page, so prices only need changing there."
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Link text, name: link_text, widget: string }
+              - { label: Card link text, name: card_link_text, widget: string }
+              - { label: "'Also available' line", name: also_line, widget: text, required: false }
+          - label: Results
+            name: results
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Link text, name: link_text, widget: string }
+              - label: Results
+                name: items
+                widget: list
+                summary: "{{fields.number}} {{fields.title}}"
+                fields:
+                  - { label: Big number, name: number, widget: string }
+                  - { label: What it measures, name: title, widget: string }
+                  - { label: Client and project, name: client, widget: string }
+                  - { label: Short description, name: text, widget: text }
+                  - { label: Links to, name: link, widget: string, hint: "e.g. /fast-focus/ or /work/#meta" }
+          - label: Testimonial
+            name: testimonial
+            widget: object
+            fields:
+              - { label: Show on site, name: show, widget: boolean }
+              - { label: Quote (no quotation marks needed), name: quote, widget: text }
+              - { label: "Name, title, company", name: name, widget: string }
+          - label: Process
+            name: process
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - label: Steps
+                name: steps
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: About preview
+            name: about
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Photo, name: photo, widget: image }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+              - { label: Link text, name: link_text, widget: string }
+          - label: Closing call to action
+            name: closing
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Button text, name: button, widget: string }
+
+      # ------------------------------------------------------------ SERVICES
+      - name: services
+        label: Services page (and prices)
+        file: src/_data/services.json
+        fields:
+          - label: Top of page
+            name: hero
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: text }
+              - { label: Intro, name: intro, widget: text }
+          - label: Services
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: "Page anchor (short, no spaces)", name: id, widget: string, hint: "Used in links like /services/#audit" }
+              - { label: Short summary (home page card), name: summary, widget: text }
+              - { label: Full description, name: description, widget: text }
+              - { label: Timeline, name: timeline, widget: string }
+              - { label: Investment / price, name: investment, widget: string }
+              - { label: What you get, name: deliverables, widget: list, field: { label: Item, name: item, widget: string } }
+              - { label: Best for, name: best_for, widget: text }
+          - { label: "'Also available' label", name: extras_label, widget: string }
+          - label: Also available
+            name: extras
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - label: FAQ
+            name: faq
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - label: Questions
+                name: items
+                widget: list
+                summary: "{{fields.question}}"
+                fields:
+                  - { label: Question, name: question, widget: string }
+                  - { label: Answer, name: answer, widget: text }
+          - label: Bottom call to action
+            name: band
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string }
+              - { label: Button text, name: button, widget: string }
+
+      # ------------------------------------------------------------ WORK
+      - name: work
+        label: Work page
+        file: src/_data/work.json
+        fields:
+          - label: Top of page
+            name: hero
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: text }
+              - { label: Intro, name: intro, widget: text }
+          - label: Case studies
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Client and years, name: meta, widget: string }
+              - { label: Description, name: text, widget: text, required: false }
+              - { label: Big text on the colored block, name: visual_text, widget: string }
+              - { label: Block color, name: visual_color, widget: select, options: [deep, sand, line] }
+              - label: Stats
+                name: stats
+                widget: list
+                required: false
+                summary: "{{fields.value}} {{fields.label}}"
+                fields:
+                  - { label: Number, name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+              - { label: Link, name: link, widget: string }
+              - { label: Link text, name: link_text, widget: string }
+              - { label: "Page anchor (short, no spaces)", name: anchor, widget: string }
+          - { label: Portfolio line, name: portfolio_line, widget: string }
+          - { label: Portfolio link text, name: portfolio_link_text, widget: string }
+
+      # ------------------------------------------------------------ FAST FOCUS
+      - name: fastfocus
+        label: Fast Focus case study
+        file: src/_data/fastfocus.json
+        fields:
+          - { label: Search engine description, name: seo_description, widget: text }
+          - { label: Back link text, name: back_link_text, widget: string }
+          - { label: Small label, name: label, widget: string }
+          - { label: Headline, name: headline, widget: text }
+          - label: Project facts
+            name: facts
+            widget: list
+            summary: "{{fields.label}}: {{fields.value}}"
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+          - label: Stats bar
+            name: stats
+            widget: list
+            summary: "{{fields.value}} {{fields.label}}"
+            fields:
+              - { label: Number, name: value, widget: string }
+              - { label: Label, name: label, widget: string }
+          - label: The challenge
+            name: challenge
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: Before and after
+            name: change
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Before title, name: before_title, widget: string }
+              - { label: Before items, name: before, widget: list, field: { label: Item, name: item, widget: string } }
+              - { label: After title, name: after_title, widget: string }
+              - { label: After items, name: after, widget: list, field: { label: Item, name: item, widget: string } }
+          - label: Learning science
+            name: science
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - label: Principles
+                name: items
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: Measuring it
+            name: measuring
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: Testimonial
+            name: testimonial
+            widget: object
+            fields:
+              - { label: Show on site, name: show, widget: boolean }
+              - { label: Quote (no quotation marks needed), name: quote, widget: text }
+              - { label: Name and title, name: name, widget: string }
+          - label: Bottom call to action
+            name: band
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string }
+              - { label: Button text, name: button, widget: string }
+
+      # ------------------------------------------------------------ ABOUT
+      - name: about
+        label: About page
+        file: src/_data/about.json
+        fields:
+          - { label: Search engine description, name: seo_description, widget: text }
+          - { label: Small label, name: label, widget: string }
+          - { label: Headline, name: headline, widget: text }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Photo, name: photo, widget: image }
+          - label: Your story
+            name: story
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: Experience
+            name: experience
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - label: Organizations
+                name: items
+                widget: list
+                summary: "{{fields.org}}"
+                fields:
+                  - { label: Organization, name: org, widget: string }
+                  - { label: What you did, name: text, widget: text }
+          - label: Education
+            name: education
+            widget: object
+            fields:
+              - { label: Small label, name: label, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - label: Degrees and certificates
+                name: items
+                widget: list
+                summary: "{{fields.degree}}"
+                fields:
+                  - { label: Degree or certificate, name: degree, widget: string }
+                  - { label: School, name: school, widget: string }
+          - label: Bottom call to action
+            name: band
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string }
+              - { label: Button text, name: button, widget: string }
+
+      # ------------------------------------------------------------ CONTACT
+      - name: contact
+        label: Book a call page
+        file: src/_data/contact.json
+        fields:
+          - { label: Search engine description, name: seo_description, widget: text }
+          - { label: Small label, name: label, widget: string }
+          - { label: Headline, name: headline, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Booking button text, name: button, widget: string }
+          - { label: "'What to expect' label", name: expect_label, widget: string }
+          - { label: What to expect, name: expect, widget: list, field: { label: Step, name: step, widget: text } }
+          - { label: Form headline, name: form_headline, widget: string }
+          - { label: Form button text, name: form_button, widget: string }
+          - { label: Note under the form, name: form_note, widget: string }
+          - { label: Thank-you page headline, name: thanks_headline, widget: string }
+          - { label: Thank-you page text, name: thanks_text, widget: text }
+
+  - name: settings
+    label: Site settings
+    editor: { preview: false }
+    files:
+      - name: site
+        label: Links, email, and footer
+        file: src/_data/site.json
+        fields:
+          - { label: Site name, name: name, widget: string }
+          - { label: Booking link (Calendly or similar), name: calendly_url, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: LinkedIn URL, name: linkedin_url, widget: string }
+          - { label: Full portfolio URL, name: portfolio_url, widget: string }
+          - { label: Header button text, name: nav_button, widget: string }
+          - { label: Footer line, name: footer_line, widget: string }
+          - { label: Home page search engine description, name: seo_description, widget: text }

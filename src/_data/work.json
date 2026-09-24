@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "label": "Work",
+    "headline": "Before, after, and what changed.",
+    "intro": "Each case study shows the problem, what was cut or rebuilt, and the result, measured in behavior rather than completions."
+  },
+  "items": [
+    {
+      "anchor": "fast-focus",
+      "visual_text": "23 min",
+      "visual_color": "deep",
+      "meta": "The MACH Alliance, 2023–2024",
+      "title": "Fast Focus: learning for leaders with 23 minutes a week",
+      "text": "",
+      "stats": [
+        {
+          "value": "3×",
+          "label": "executive engagement"
+        },
+        {
+          "value": "45%",
+          "label": "moved to credentialed courses"
+        },
+        {
+          "value": "17 min",
+          "label": "average module time"
+        }
+      ],
+      "link": "/fast-focus/",
+      "link_text": "Read the case study"
+    },
+    {
+      "anchor": "meta",
+      "visual_text": "70k",
+      "visual_color": "line",
+      "meta": "Meta, 2021–2022",
+      "title": "Spark AR Advanced Certification",
+      "text": "Coordinated SMEs and vendors across multiple countries to deliver a technical certification program under a compressed deadline.",
+      "stats": [
+        {
+          "value": "70,000",
+          "label": "sign-ups"
+        }
+      ],
+      "link": "https://sianaaltiise.wixsite.com/portfolio/facebook-onboarding-tool-copy-1",
+      "link_text": "Read the case study"
+    },
+    {
+      "anchor": "unomundi",
+      "visual_text": "Una",
+      "visual_color": "sand",
+      "meta": "UnoMundi, 2024–present",
+      "title": "Una: an AI-enabled learning system",
+      "text": "A schema-driven AI learning system for a global children's platform: prompt pipelines, content governance, and mastery tracking without traditional tests.",
+      "stats": [],
+      "link": "https://sianaaltiise.wixsite.com/portfolio/copy-of-spark-ar",
+      "link_text": "Read the case study"
+    }
+  ],
+  "portfolio_line": "Looking for eLearning samples, animations, and graphics?",
+  "portfolio_link_text": "See the full portfolio"
+}

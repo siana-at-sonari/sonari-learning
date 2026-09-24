@@ -1,0 +1,71 @@
+{
+  "seo_description": "Siana Altiise is a learning designer and researcher trained in experimental psychology, with programs for Meta, the MACH Alliance, and UnoMundi.",
+  "label": "About",
+  "headline": "I design for the attention people actually have.",
+  "intro": "I'm Siana Altiise, a learning designer and researcher trained in experimental psychology, with 6+ years across AI, enterprise technology, and immersive training.",
+  "photo": "/images/siana.jpg",
+  "story": {
+    "label": "Why Sonari",
+    "headline": "More information was never the answer.",
+    "paragraphs": [
+      "I live with synesthesia and misophonia, so I've paid close attention to how environments shape focus for most of my life. That curiosity became my research, and it became my approach to learning design.",
+      "Across programs at Meta, the MACH Alliance, and UnoMundi, I kept seeing the same pattern: organizations investing in more content when their people needed less, delivered more clearly.",
+      "Sonari Learning applies the Sonari Method, my framework for how conditions shape attention and attention shapes performance, to the way organizations teach."
+    ]
+  },
+  "experience": {
+    "label": "Selected experience",
+    "items": [
+      {
+        "org": "Meta",
+        "text": "Spark AR certification program and creator research across APAC, EMEA, and the Americas"
+      },
+      {
+        "org": "The MACH Alliance",
+        "text": "Senior Learning Designer, Fast Focus executive learning"
+      },
+      {
+        "org": "UnoMundi",
+        "text": "Curriculum Architect, AI-enabled conversational learning"
+      },
+      {
+        "org": "Flatiron",
+        "text": "Longitudinal inclusive-learning study, 375+ participants"
+      },
+      {
+        "org": "Enduvo",
+        "text": "Immersive VR training validation for military aviation"
+      },
+      {
+        "org": "Dell",
+        "text": "Lean UX research for the Hands-On Labs developer ecosystem"
+      }
+    ]
+  },
+  "education": {
+    "label": "Education",
+    "headline": "Trained in how people think",
+    "items": [
+      {
+        "degree": "B.A., Research & Experimental Psychology",
+        "school": "Florida Atlantic University"
+      },
+      {
+        "degree": "M.A., Anthropology / Intercultural Communication",
+        "school": "Biola University"
+      },
+      {
+        "degree": "UX/UI Certificate",
+        "school": "Texas A&M"
+      },
+      {
+        "degree": "Data Science",
+        "school": "MIT"
+      }
+    ]
+  },
+  "band": {
+    "headline": "Let's find the shortest route for your learners.",
+    "button": "Book a call"
+  }
+}

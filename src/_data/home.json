@@ -1,0 +1,128 @@
+{
+  "hero": {
+    "headline": "Learning designed for the attention your people actually have.",
+    "intro": "More content isn't more learning. Sonari Learning designs training that respects limited time and focus, cutting what doesn't earn its place so what remains actually changes how people work.",
+    "primary_button": "Book a 20-minute intro call",
+    "secondary_button": "See the work",
+    "caption_left": "More information",
+    "caption_right": "A clearer route"
+  },
+  "clients": {
+    "label": "Learning and research programs for",
+    "names": [
+      "Meta",
+      "Dell",
+      "Flatiron",
+      "The MACH Alliance",
+      "UnoMundi"
+    ]
+  },
+  "problem": {
+    "label": "The problem",
+    "headline": "Your training isn't failing because it's too thin.",
+    "paragraphs": [
+      "It's failing because it asks for attention your people don't have. Courses get longer, completion rates drop, and the learners you most need to reach, like busy leaders, frontline teams, and new hires on overload, skim, skip, or click through without absorbing anything.",
+      "Adding more modules, more slides, or more assessments rarely helps. It makes the problem worse."
+    ]
+  },
+  "approach": {
+    "label": "The Sonari approach",
+    "headline": "Fewer, clearer routes to learning.",
+    "intro": "Built on the Sonari Method, a framework grounded in attention science and experimental psychology. Every program starts with one question: what is the shortest clear path to what your learners need to do differently?",
+    "principles": [
+      {
+        "title": "Design to the attention budget",
+        "text": "We measure how much time and focus your learners actually have, then design within it."
+      },
+      {
+        "title": "Cut before we add",
+        "text": "Most programs improve by removing content. We find what's essential and let the rest go."
+      },
+      {
+        "title": "Protect focus",
+        "text": "Format, length, pacing, and environment shape whether learning lands, including audio, the channel most programs overlook."
+      },
+      {
+        "title": "Measure behavior, not recall",
+        "text": "We track what people do after learning, not just whether they finished."
+      }
+    ]
+  },
+  "services_intro": {
+    "label": "Services",
+    "headline": "Ways to work together",
+    "link_text": "All services and pricing",
+    "card_link_text": "Read more",
+    "also_line": "Also available: AI-enabled learning systems and certification program design."
+  },
+  "results": {
+    "label": "Proof",
+    "headline": "Results",
+    "link_text": "All case studies",
+    "items": [
+      {
+        "number": "3×",
+        "title": "executive engagement in four months",
+        "client": "The MACH Alliance, Fast Focus",
+        "text": "Leaders had about 23 minutes a week to learn. We designed around that limit: 17-minute average modules, and 45% moved on to credentialed coursework.",
+        "link": "/fast-focus/"
+      },
+      {
+        "number": "70,000",
+        "title": "sign-ups on a compressed deadline",
+        "client": "Meta, Spark AR Certification",
+        "text": "A technical certification program coordinated across SMEs and vendors in multiple countries.",
+        "link": "/work/#meta"
+      },
+      {
+        "number": "0 tests",
+        "title": "mastery tracked without traditional exams",
+        "client": "UnoMundi, AI learning system",
+        "text": "A schema-driven AI learning system for a global children's platform, with governed content and progress measured by demonstrated mastery.",
+        "link": "/work/#unomundi"
+      }
+    ]
+  },
+  "testimonial": {
+    "show": false,
+    "quote": "Client quote about the results or what it was like to work together.",
+    "name": "Name, Title, Company"
+  },
+  "process": {
+    "label": "Process",
+    "headline": "How an engagement works",
+    "steps": [
+      {
+        "title": "Listen",
+        "text": "Your goals, your learners, and the reality of their time and attention."
+      },
+      {
+        "title": "Cut",
+        "text": "Separate what's essential from what's just volume."
+      },
+      {
+        "title": "Design",
+        "text": "Build the shortest clear route to the behavior you need."
+      },
+      {
+        "title": "Measure",
+        "text": "Track real outcomes and refine."
+      }
+    ]
+  },
+  "about": {
+    "label": "About",
+    "headline": "Hi, I'm Siana Altiise.",
+    "photo": "/images/siana.jpg",
+    "paragraphs": [
+      "I'm a learning designer and researcher trained in experimental psychology, with 6+ years designing learning and research programs across AI, enterprise technology, and immersive training.",
+      "I founded Sonari Learning because I kept seeing the same pattern: organizations investing in more content when their people needed less, delivered more clearly."
+    ],
+    "link_text": "More about me"
+  },
+  "closing": {
+    "headline": "Let's find the shortest route.",
+    "text": "A 20-minute call, which is about all the time most learners get, too. We'll talk through what you're trying to change and whether I'm the right fit.",
+    "button": "Book a call"
+  }
+}

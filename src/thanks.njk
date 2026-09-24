@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Note sent
+permalink: /thanks/
+eleventyExcludeFromCollections: true
+---
+<section class="section closing">
+  <div class="wrap stack stack--lg">
+    <h1>{{ contact.thanks_headline }}</h1>
+    <p class="lede">{{ contact.thanks_text }}</p>
+    <div class="btn-row" style="justify-content: center">
+      <a class="btn btn--primary" href="{{ site.calendly_url }}" target="_blank" rel="noopener">{{ contact.button }}</a>
+      <a class="btn btn--ghost" href="/">Back to home</a>
+    </div>
+  </div>
+</section>

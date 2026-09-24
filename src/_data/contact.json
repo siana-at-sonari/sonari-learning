@@ -1,0 +1,18 @@
+{
+  "seo_description": "Book a 20-minute intro call with Sonari Learning, or send a note about the learning you want to change.",
+  "label": "Book a call",
+  "headline": "Let's find the shortest route.",
+  "intro": "A 20-minute call, which is about all the time most learners get, too.",
+  "button": "Pick a time for the call",
+  "expect_label": "What to expect",
+  "expect": [
+    "You tell me what you're trying to change and who your learners are.",
+    "I share where I'd start and what I'd likely cut.",
+    "If it's a fit, you get a scoped proposal within [3] business days."
+  ],
+  "form_headline": "Or send a note first",
+  "form_button": "Send note",
+  "form_note": "I reply within [2] business days.",
+  "thanks_headline": "Note sent.",
+  "thanks_text": "Thanks for reaching out. I'll reply within [2] business days. If you'd like to talk sooner, pick a time for a 20-minute call."
+}

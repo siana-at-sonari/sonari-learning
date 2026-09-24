@@ -1,0 +1,106 @@
+{
+  "seo_description": "How Fast Focus tripled executive engagement for the MACH Alliance by designing around 23 minutes of learning time a week.",
+  "back_link_text": "Back to all work",
+  "label": "Case study: The MACH Alliance, 2023–2024",
+  "headline": "Fast Focus: learning for leaders with 23 minutes a week.",
+  "facts": [
+    {
+      "label": "Role",
+      "value": "Senior Learning Designer"
+    },
+    {
+      "label": "Audience",
+      "value": "CTOs, CMOs, CEOs, Heads of Product"
+    },
+    {
+      "label": "Timeline",
+      "value": "4-month rollout"
+    }
+  ],
+  "stats": [
+    {
+      "value": "3×",
+      "label": "executive engagement"
+    },
+    {
+      "value": "45%",
+      "label": "clicked through to credentialed courses"
+    },
+    {
+      "value": "17 min",
+      "label": "average time on module"
+    },
+    {
+      "value": "90%",
+      "label": "of reflections aligned with transformation goals"
+    }
+  ],
+  "challenge": {
+    "label": "The challenge",
+    "headline": "Leaders wanted clarity without coursework.",
+    "paragraphs": [
+      "The MACH Alliance helps companies move to composable architecture. Its credentialed courses were rigorous, but they demanded time and focus that senior leaders didn't have.",
+      "Leaders reported an average of just 23 minutes a week for learning. They wanted insight without instruction, and behavior change without traditional assessments."
+    ]
+  },
+  "change": {
+    "label": "What changed",
+    "before_title": "Before",
+    "before": [
+      "Full credentialed courses as the only entry point",
+      "Significant time and cognitive investment up front",
+      "Formal assessments and grading",
+      "Community platform used as a passive forum"
+    ],
+    "after_title": "After",
+    "after": [
+      "Units scoped to 15–20 minutes, inside the attention budget",
+      "Podcast-style audio lessons for on-the-go learning",
+      "Reflection prompts instead of quizzes, with cited sources",
+      "Monthly live AMAs and a link back to full courses for depth"
+    ]
+  },
+  "science": {
+    "label": "The learning science",
+    "headline": "Why the shorter route worked",
+    "items": [
+      {
+        "title": "Cognitive load",
+        "text": "Chunked content reduced overload and sped uptake."
+      },
+      {
+        "title": "Dual coding",
+        "text": "Paired audio and text strengthened retention."
+      },
+      {
+        "title": "Self-explanation",
+        "text": "Reflection prompts connected ideas to leaders' own work."
+      },
+      {
+        "title": "Spacing",
+        "text": "Weekly engagement replaced one-time completion."
+      },
+      {
+        "title": "Autonomy",
+        "text": "Leaders chose how and when to learn."
+      }
+    ]
+  },
+  "measuring": {
+    "label": "Measuring it",
+    "headline": "Feedback without friction",
+    "paragraphs": [
+      "Instead of quizzes, leaders got a five-question, mobile-friendly survey at month's end, timed for when they actually skim their inbox. About 65% opened it and about 30% completed it.",
+      "Engagement signals from community activity, email clicks, and AMA attendance fed each iteration. Non-technical leaders began using shared language with technical teams, and the community platform became a credible learning destination."
+    ]
+  },
+  "testimonial": {
+    "show": false,
+    "quote": "Quote from a MACH Alliance stakeholder or learner.",
+    "name": "Name, Title"
+  },
+  "band": {
+    "headline": "Have leaders who won't sit through a course?",
+    "button": "Book a call"
+  }
+}

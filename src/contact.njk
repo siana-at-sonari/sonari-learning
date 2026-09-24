@@ -1,0 +1,48 @@
+---
+layout: base.njk
+title: Book a call
+permalink: /contact/
+eleventyComputed:
+  description: "{{ contact.seo_description }}"
+---
+{% set c = contact %}
+<section class="section">
+  <div class="wrap split">
+    <div class="stack stack--lg">
+      <p class="label">{{ c.label }}</p>
+      <h1>{{ c.headline }}</h1>
+      <p class="lede">{{ c.intro }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="{{ site.calendly_url }}" target="_blank" rel="noopener">{{ c.button }}</a>
+      </div>
+      <div class="stack" style="margin-top: 1rem">
+        <p class="col-head">{{ c.expect_label }}</p>
+        <ol class="expect">{% for e in c.expect %}<li>{{ e }}</li>{% endfor %}</ol>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size: clamp(2rem, 3vw, 2.6rem)">{{ c.form_headline }}</h2>
+      <form class="form" name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Leave this empty <input name="bot-field"></label></p>
+        <div class="form-row">
+          <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="c-email">Work email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="c-company">Company and role</label><input id="c-company" name="company" type="text" autocomplete="organization"></div>
+        <div class="field">
+          <label for="c-service">What are you interested in?</label>
+          <select id="c-service" name="service">
+            {% for s in services.items %}<option>{{ s.name }}</option>{% endfor %}
+            {% for e in services.extras %}<option>{{ e.title }}</option>{% endfor %}
+            <option selected>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field"><label for="c-change">What are you trying to change?</label><textarea id="c-change" name="message" rows="5" required></textarea></div>
+        <button class="btn btn--primary" type="submit">{{ c.form_button }}</button>
+        <p class="small">{{ c.form_note }} Prefer email? <a class="text-link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: About
+current: about
+permalink: /about/
+eleventyComputed:
+  description: "{{ about.seo_description }}"
+---
+{% set a = about %}
+<section class="hero">
+  <div class="wrap split split--center">
+    <div class="stack stack--lg">
+      <p class="label">{{ a.label }}</p>
+      <h1>{{ a.headline }}</h1>
+      <p class="lede">{{ a.intro }}</p>
+    </div>
+    <img class="portrait" src="{{ a.photo }}" alt="Portrait of Siana Altiise" width="900" height="1125">
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="wrap split split--offset">
+    <div class="stack">
+      <p class="label">{{ a.story.label }}</p>
+      <h2>{{ a.story.headline }}</h2>
+    </div>
+    <div class="stack body-lg">
+      {% for p in a.story.paragraphs %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--deep">
+  <div class="wrap">
+    <p class="label" style="margin-bottom: 3rem">{{ a.experience.label }}</p>
+    <div class="grid-3">
+      {% for x in a.experience.items %}<div class="stack ruled"><h3>{{ x.org }}</h3><p class="muted">{{ x.text }}</p></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--offset">
+    <div class="stack">
+      <p class="label">{{ a.education.label }}</p>
+      <h2>{{ a.education.headline }}</h2>
+    </div>
+    <div class="edu">
+      {% for e in a.education.items %}<div><b>{{ e.degree }}</b><span class="muted">{{ e.school }}</span></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="band band--sand">
+    <h2>{{ a.band.headline }}</h2>
+    <a class="btn btn--primary" href="/contact/">{{ a.band.button }}</a>
+  </div>
+</div>
